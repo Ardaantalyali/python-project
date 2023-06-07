@@ -1,0 +1,22 @@
+print("ATM ye Hoşgeldiniz")
+print("Para Çekmek İçin: 1  ")
+print("Para Yatırmak İçin: 2")
+print("Bakiye Sorgulamak İçin: 3 ")
+print(" Programdan Çıkmak İçin: 4 tuşuna basınız")
+bakiye=15000
+while True:
+    islem = int(input("yapmak istediğiniz işlemi giriniz:"))
+    if islem == 4 :
+        print("çıkış yaptınız yine bekleriz.")
+        break
+    elif islem == 1 :
+        cekme = int(input("çekmek istediğiniz miktarı giriniz:"))
+        print("yeni bakiye:", bakiye - cekme)
+        if cekme > bakiye :
+            print("bakiyeniz yetersiz.")
+    elif islem == 2 :
+        yatırma = int(input("yatırmak istediğiniz miktarı giriniz:"))
+        print("yeni bakiye", yatırma + bakiye)
+    elif islem == 3 :
+        print("bakiyeniz:", bakiye)
+        
